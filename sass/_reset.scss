@@ -1,0 +1,184 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Указываем box sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+textarea,
+select,
+button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+/* Упрощаем работу с изображениями и прочей ерундой*/
+embed,
+iframe,
+img,
+object,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.visually-hidden {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+}
+
+.form__select-wrapper {
+  background: #fff;
+  width: 35%;
+  margin-left: auto;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid #bababa;
+  border: none;
+}
+
+.form__arrow {
+  display: block;
+  width: 45px;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  right: 0;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 3px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #3a3a3a;
+  }
+}
+
+.form__element--select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  background: #ffffff;
+  white-space: nowrap;
+  text-indent: 0.01px;
+  background: transparent;
+  text-overflow: '';
+  position: relative;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+
+  option {
+    background: #ffffff;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.form__element--select::-ms-expand {
+  display: none;
+}
+
+.dt {
+  display: table;
+}
+
+.dtc {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+body {
+  min-width: 320px;
+  width: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: $font-first;
+}
+
+.wrapper {
+  max-width: $desktop-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
