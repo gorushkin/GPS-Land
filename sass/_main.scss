@@ -1,0 +1,71 @@
+.features {
+  background: #141315;
+  color: #ffffff;
+  padding-top: 120px;
+  font-size: 1.5rem;
+  background:
+    // url('../img/bg2.jpg') top right no-repeat,
+    #141315;
+  background-size: auto 100%;
+}
+
+ul.features__list {
+  padding-left: 100px;
+  display: table;
+  max-width: 50%;
+}
+
+.features__item {
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+
+  span {
+    display: block;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    left: -70px;
+    top: 0;
+    background-size: contain;
+  }
+
+  &:nth-child(1):before {
+    background: url('../img/icon1.png') center;
+    background-size: contain;
+  }
+
+  &:nth-child(2):before {
+    background: url('../img/icon2.png') center no-repeat;
+    background-size: contain;
+  }
+
+  &:nth-child(3):before {
+    background: url('../img/icon3.png') center no-repeat;
+    background-size: contain;
+
+  }
+
+  &:nth-child(4):before {
+    background: url('../img/icon4.png') center no-repeat;
+    background-size: contain;
+
+  }
+
+  &:nth-child(5):before {
+    background: url('../img/icon5.png') center;
+    background-size: contain;
+
+  }
+
+  &:nth-child(6):before {
+    background: url('../img/icon6.png') center no-repeat;
+    background-size: contain;
+  }
+}

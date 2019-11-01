@@ -1,9 +1,11 @@
 .img-block {
-  width: 380px;
+  // width: 380px;
+  width: 500px;
   height: 530px;
 
   @include tablet {
     height: 350px;
+    width: 380px;
   }
 
   @include wide-mobile {
