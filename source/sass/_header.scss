@@ -1,5 +1,5 @@
 .header {
-  background: url('../img/bg1.jpg') no-repeat center top;
+  background: url("../img/bg1.jpg") no-repeat center top;
   background-size: cover;
 
   .wrapper {
@@ -61,7 +61,7 @@
 }
 
 .header__logo {
-  color: #0BF3F9;
+  color: #0bf3f9;
   font-size: 6rem;
   text-align: center;
   line-height: 7rem;
@@ -76,7 +76,7 @@
   }
 
   span {
-    color: #91DD4C;
+    color: #91dd4c;
   }
 }
 

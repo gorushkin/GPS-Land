@@ -72,8 +72,8 @@ video {
   display: none;
 }
 
-.clearfix:after {
-  content: '';
+.clearfix::after {
+  content: "";
   display: block;
   clear: both;
 }
@@ -90,7 +90,7 @@ video {
 }
 
 .form__select-wrapper {
-  background: #fff;
+  background: #ffffff;
   width: 35%;
   margin-left: auto;
   position: relative;
@@ -107,8 +107,8 @@ video {
   position: absolute;
   right: 0;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     display: block;
     position: absolute;
     width: 0;
@@ -137,7 +137,7 @@ video {
   white-space: nowrap;
   text-indent: 0.01px;
   background: transparent;
-  text-overflow: '';
+  text-overflow: "";
   position: relative;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.6);
