@@ -1,10 +1,10 @@
 var btnList = document.querySelectorAll('.btnlink');
 var anchor = document.querySelector('.anchor');
-var animationTime = 600;
-var framesCount = 100;
-if (anchor) {
-  var anchorPosition = anchor.getBoundingClientRect().top + pageYOffset;
-}
+// var animationTime = 600;
+// var framesCount = 100;
+// if (anchor) {
+//   var anchorPosition = anchor.getBoundingClientRect().top + pageYOffset;
+// }
 
 for (var i = 0; i < btnList.length; i++ ) {
   findBtn(i);

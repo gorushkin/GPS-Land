@@ -9,7 +9,8 @@
     "fix": "stylelint \"source/sass/**/*.scss\" --fix",
     "test": "npm run editorconfig && npm run stylelint",
     "start": "gulp start",
-    "build": "gulp build"
+    "build": "gulp build",
+    "eslint": "eslint  \"source/js/**.js\""
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
     "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
     "gulp": "^4.0.2",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",

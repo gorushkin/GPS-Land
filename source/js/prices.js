@@ -8,11 +8,11 @@ function price_rnd() {
   return Math.round(Math.random() * 90 + 10);
 }
 window.onload = function () {
-  a = document.getElementsByTagName('*');
-  for (i = 0; i < a.length; i++)
+  var a = document.getElementsByTagName('*');
+  for (var i = 0; i < a.length; i++)
     if (a[i].tagName != "SCRIPT")
-      for (j = 0; j < a[i].childNodes.length; j++) {
-        b = a[i].childNodes[j];
+      for (var j = 0; j < a[i].childNodes.length; j++) {
+        var b = a[i].childNodes[j];
         if (b.nodeType == 3) {
           if (ifel.test(b.textContent)) b.textContent = b.textContent.replace(ifel, '');
           if (ef.test(b.textContent)) b.textContent = b.textContent.replace(ef, '');
