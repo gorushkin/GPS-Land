@@ -3,26 +3,63 @@
   color: #ffffff;
   padding-top: 120px;
   font-size: 1.5rem;
-  background: // url('../img/bg2.jpg') top right no-repeat,
+  background: url('../img/bg2.jpg') top right no-repeat,
     #141315;
   background-size: auto 100%;
+
+  @include laptop {
+    padding-top: 50px;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  @include tablet {
+    padding-bottom: 500px;
+    background: url('../img/bg2.jpg') bottom center no-repeat,
+      #141315;
+    background-size: auto 500px;
+  }
+
+  @include mobile {
+    padding-bottom: 320px;
+    background-size: auto 320px;
+  }
 }
 
 ul.features__list {
   padding-left: 100px;
   display: table;
   max-width: 50%;
+
+  @include tablet {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  @include wide-mobile {
+    padding-left: 25px;
+    // outline: 2px solid red;
+  }
 }
 
 .features__item {
-  margin-bottom: 30px;
   position: relative;
-  display: inline-block;
-  vertical-align: bottom;
+  margin-bottom: 20px;
   width: 100%;
 
+  @include wide-mobile {
+    margin-bottom: 10px;
+    display: table;
+  }
+
   span {
-    display: block;
+    display: table-cell;
+    height: 50px;
+    vertical-align: middle;
+
+    @include tablet {
+      height: 30px;
+    }
   }
 
   &::before {
@@ -33,6 +70,15 @@ ul.features__list {
     left: -70px;
     top: 0;
     background-size: contain;
+
+    @include tablet {
+      width: 30px;
+      height: 30px;
+    }
+
+    @include wide-mobile {
+      left: -45px;
+    }
   }
 
   &:nth-child(1)::before {
