@@ -1,0 +1,82 @@
+.info {
+  font-size: 0;
+  background: // url("../img/bg3.jpg") top left no-repeat,
+    #f2f2ea;
+  color: #000000;
+
+  .wrapper {
+    max-width: none;
+    width: 100%;
+    padding: 0;
+
+    @include laptop {
+      max-width: 800px;
+    }
+  }
+
+  @include tablet {
+    padding-top: 50px;
+  }
+}
+
+.info__column {
+  width: 50%;
+  height: 600px;
+
+  &--left {
+    background: url("../img/bg3.jpg") top left no-repeat;
+    background-size: contain;
+    float: left;
+
+    @include tablet {
+      background: url("../img/bg3.jpg") top center no-repeat;
+      background-size: auto 100%;
+    }
+
+    @include wide-mobile {
+      background-size: contain;
+      height: 300px;
+    }
+  }
+
+  &--right {
+    padding-right: 100px;
+    display: table;
+    float: right;
+
+    @include laptop {
+      padding-right: 0;
+      height: auto;
+    }
+  }
+
+  @include laptop {
+    float: none;
+    width: 100%;
+  }
+}
+
+.info__text-block {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 15px;
+}
+
+.info__txt {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 900;
+
+  @include wide-mobile {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  &--big {
+    font-size: 2.5rem;
+
+    @include wide-mobile {
+      font-size: 1.5rem;
+    }
+  }
+}

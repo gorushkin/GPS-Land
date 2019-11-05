@@ -15,13 +15,13 @@ const gulp = require('gulp'),
   name = path.basename(__dirname),
   zipFolder = 'C:/Users/Alex/Documents/artyom/webdev/залить',
 
-  processpres = [autoprefixer, cssNano];
+  processpres = [autoprefixer];
 
 const css = () => gulp.src('source/sass/style.scss')
   .pipe(plumber())
+  .pipe(sourcemaps.init())
   .pipe(sass())
   .pipe(postcss(processpres))
-  .pipe(sourcemaps.init())
   .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest("build/css"))
   .pipe(server.stream());
@@ -53,6 +53,7 @@ const watch = () => {
   gulp.watch('source/*.html', gulp.series(copy, refresh));
   gulp.watch('source/sass/**/*.{scss,sass}', css);
   gulp.watch('source/js/*.*', gulp.series(copy, refresh));
+  gulp.watch('source/img/*.*', gulp.series(copy, refresh));
 };
 
 

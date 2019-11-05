@@ -125,20 +125,18 @@ video {
 }
 
 .form__element--select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
+  // -webkit-appearance: none;
+  // -moz-appearance: none;
+  // -ms-appearance: none;
+  // -o-appearance: none;
   appearance: none;
   position: relative;
   z-index: 1;
-  background: #ffffff;
-  background: #ffffff;
+  // background: #ffffff;
   white-space: nowrap;
   text-indent: 0.01px;
   background: transparent;
   text-overflow: "";
-  position: relative;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.6);
   width: 100%;
